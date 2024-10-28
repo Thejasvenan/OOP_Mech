@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
 double Max(int, double*);
@@ -9,7 +8,7 @@ double Median(int, double*);
 
 int main()
 {
-    char Response = 'N';
+    char Response;
     do {
         int size;
         cout << "Enter the number of data points :\t";
@@ -18,7 +17,7 @@ int main()
         double* pPoint = new double[size];
         for (int i = 0; i < size; i++)
         {
-            cout << "Enter the data #" << i + 1 << "\t";
+            cout << "Enter the data #" << i + 1 << " :\t";
             cin >> *(pPoint + i);
         }
         cout << "#############################################";
@@ -29,13 +28,13 @@ int main()
         cout << "Average value :\t" << Average(size, pPoint) << endl;
         cout << "Median value :\t" << Median(size, pPoint) << endl;
 
-        delete[]pPoint;
+        delete[] pPoint;
         pPoint = nullptr;
         cout << "\n\nDo you want to enter the data again? (Y/N)\t";
         cin >> Response;
         cout << "\n";
-    } while (Response == 'Y');
-    _getch();
+    } while (Response == 'Y'|| Response == 'y');
+    return 0;
 }
 
 double Max(int s, double* p)
@@ -54,7 +53,7 @@ double Min(int s, double* p)
     double min = *p;
     for (int i=0; i < s; i++)
     {
-        if (p[i] < min)
+        if (*(p+i) < min)
             min = *(p+i);
     }
     return min;
