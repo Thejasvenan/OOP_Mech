@@ -1,6 +1,5 @@
 #include <iostream>
 #include <conio.h>
-using namespace std;
 
 #define CONVERTION 3.28084
 
@@ -32,7 +31,7 @@ Distance::Distance(double k)
 
 void Distance::Print()
 {
-	cout << feet << "'" << "  " << inches << "''\n";
+	cout << feet << "'" << "  " << inches << "\"\n";
 }
 
 void main() {
