@@ -23,7 +23,7 @@ Distance::Distance()
 }
 
 
-int Distance::operator= (double dist_meters)
+int Distance::operator = (double dist_meters)
 {
 	double d_inch = dist_meters * CONVERTION * 12;
 	feet = int(d_inch / 12);
