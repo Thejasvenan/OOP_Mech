@@ -17,6 +17,6 @@ using namespace std;
 	pPoint = &b;
 	*pPoint = 500;
 	cout << "New value of pPoint is: " << pPoint << endl;
-	cout << "The address of pPoint is: " << &pPoint << endl;
+	cout << "The address of pPoint is: " << &pPoint << endl; // address of pPoint is changed
 	return 0;
 }*/

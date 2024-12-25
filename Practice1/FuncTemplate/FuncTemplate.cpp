@@ -4,7 +4,7 @@
 
 using namespace std;
 
-template< typename A>
+template <typename A>
 A Max(A[], int);
 
 void main()

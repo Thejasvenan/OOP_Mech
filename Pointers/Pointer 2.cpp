@@ -19,7 +19,7 @@ int main()
 	cout << "\n\nThe maximum value is: " << Max(size, pAry) << endl;
 
 	delete[] pAry; // deallocate the memory (Pointer is not deleted)
-	pAry = NULL; // 
+	pAry = NULL; // set the pointer to NULL
 	return 0;
 	_getch();
 }
